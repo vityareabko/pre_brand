@@ -1,0 +1,54 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    {% block stylesheet %} {% endblock %}
+</head>
+<body>
+    <header>
+        <div class="row mx-auto container d-flex justify-center">
+            <div class="col-2">
+                2
+            </div>
+            <div class="col-3">
+                3
+            </div>
+            <div class="col-2">
+                2
+            </div>
+            <div class="col-3 offset-1">
+                1 off 3 
+            </div>
+            <div class="col-1">
+                1
+            </div>
+        </div>
+
+        <div class="info_offer_board">
+            <div class="row mx-auto container">
+                <div class="col-3">телефон: +380 (068) 940 08 59</div>
+                <div class="col-4 offset-2 text-centex mx-auto">Вигiдна пропозиiя</div>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    {% block js %} 
+    {% endblock %}
+
+    <footer class="footer">
+        
+    </footer>
+</body>
+</html>
