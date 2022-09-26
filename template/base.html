@@ -22,11 +22,11 @@
 </head>
 <body>
     <header class="header">
-        <div class="row mx-auto container d-flex justify-center header_content">
-            <div class="col-2 header__brand_name">
+        <div class="row mx-auto container d-flex justify-content-between header_content">
+            <div class="col-lg-2 col-md-4 header__brand_name">
                 <h1 class="brand_name">Pre Brand</h1>
             </div>
-            <div class="col-3 header__search_form">
+            <div class="col-lg-3 col-md-4 header__search_form">
                 <form action="#">
                     <div class="input-group d-flex justify-around">
                         <a class="img_part">
@@ -38,22 +38,22 @@
                     </div>
                 </form>
             </div>
-            <div class="col-3 header__brand_instagram">
+            <div class="col-lg-3 col-md-1 header__brand_instagram">
                 <div class="row d-flex justify-center">
                     <div class="img_instagram">
-                        <img src="{% static '/img/insta.png'%}" class="w100" alt="instagram">
-                        <a href="#">@Nash_instagram</a>
+                        <a href="#"><img src="{% static '/img/insta.png'%}" class="w100" alt="instagram"></a>
+                        <a href="#" class="instagram">@Nash_instagram</a>
                     </div>
                     
                 </div>
             </div>
-            <div class="col-3 headder__authorition">
+            <div class="col-lg-3 col-md-4 headder__authorition">
                 <div class="group_buttons">
                     <a href="#" class="btn_logIn">Увійти</a>
                     <a href="#" class="btn_signIn">Зарєеструватися</a>
                 </div>
             </div>
-            <div class="col-1 header__bag">
+            <div class="col-lg-1 col-md-1 header__bag">
                 <a href="#">
                     <img class="w100" src="{% static 'img/bag.png' %}" alt="my_bascket">
                 </a>
@@ -61,12 +61,14 @@
         </div>
     </header>
     <section class="sub_header">
-        <div class="info_offer_board">
-            <div class="row py-auto mx-auto container">
-                <div class="col-3">телефон: +380 (068) 940 08 59</div>
-                <div class="col-4 offset-2 text-centex mx-auto offer"> Вигiдна пропозиiя</div>
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <a class="col-lg-3 col-md-3 sub_header__phone">телефон: +380 (068) 940 08 59</a>
+                    <div class="offset-3 col-lg-4 col-md-4">
+                        <a class="subheader_modal__offer"> Вигiдна пропозиiя</a>   
+                    </div>
+                </div>
             </div>
-        </div>
     </section>
 
     {% block content %}
